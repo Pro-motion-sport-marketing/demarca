@@ -216,8 +216,12 @@
   const mill = n => (n / 1e6).toFixed(2).replace('.', ',') + ' M';
   $('#barrasGT').innerHTML = GT.map(([f, n]) => `<li class="barra-fila" title="${f}: ${mill(n)} visualizaciones"><span>${f}</span><div class="barra-pista" style="--w:${(n / maxGT * 78).toFixed(1)}%"><div class="barra-relleno"></div><b class="barra-valor">${mill(n)}</b></div></li>`).join('');
   $('#tablaGT tbody').innerHTML = GT.map(([f, n]) => `<tr><td>${f}</td><td>${n.toLocaleString('es-EC')}</td></tr>`).join('');
-  const totalV = VIDEOS.reduce((a, v) => a + v.vistas, 0);
-  $('#megaVistas').textContent = '+' + Math.floor(totalV / 1e6) + ' M';
+  const PERFILES = [['GT Challenge de las Américas', 10412722], ['Thor Kitchen', 3506603], ['iGlace', 1724487], ['Luis Cross', 1218801], ['Sebastián Merchán', 756026], ['HiHeat', 725950], ['Juan Guerrero', 483257], ['Diego Serrano', 289063], ['Pro Motion', 230877], ['OX Sport Agency', 91760], ['Recovery', 70356]];
+  const maxP = PERFILES[0][1];
+  const corto = n => n >= 1e6 ? (n / 1e6).toFixed(1).replace('.', ',') + ' M' : Math.round(n / 1000) + ' mil';
+  $('#barrasPerfiles').innerHTML = PERFILES.map(([f, n]) => `<li class="barra-fila" title="${f}: ${n.toLocaleString('es-EC')} visualizaciones"><span>${f}</span><div class="barra-pista" style="--w:${Math.max(n / maxP * 82, .6).toFixed(1)}%"><div class="barra-relleno"></div><b class="barra-valor">${corto(n)}</b></div></li>`).join('');
+  $('#tablaPerfiles tbody').innerHTML = PERFILES.map(([f, n]) => `<tr><td>${f}</td><td>${n.toLocaleString('es-EC')}</td></tr>`).join('');
+  $('#megaVideos').textContent = '+' + VIDEOS.length;
   $('#megaProyectos').textContent = '+' + GRUPOS.length;
 
   /* ---------- Planes y cotizador ---------- */
