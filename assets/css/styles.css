@@ -70,9 +70,9 @@ p { margin: 0; }
   background: rgba(29, 30, 26, .55); border: 1px solid var(--vidrio-borde); border-radius: 99px;
   backdrop-filter: blur(18px) saturate(1.3); -webkit-backdrop-filter: blur(18px) saturate(1.3);
 }
-.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-right: 10px; }
-.logo-img { height: 36px; width: auto; display: block; }
-.pie-logo { width: min(280px, 70%); height: auto; margin-bottom: 22px; }
+.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; padding: 0 18px 0 6px; margin-right: 6px; border-right: 1px solid rgba(240,241,234,.16); align-self: stretch; }
+.logo-img { height: 19px; width: auto; display: block; }
+
 .logo-sol { width: 34px; color: var(--hueso); }
 .logo-texto { font-weight: 800; font-size: 14px; letter-spacing: .06em; font-variation-settings: "wdth" 125; display: flex; align-items: center; gap: 4px; }
 .logo-texto b { background: var(--naranja); color: var(--grafito); padding: 1px 5px 0; border-radius: 4px; }
@@ -305,16 +305,21 @@ p { margin: 0; }
 .marcas-lista i:nth-of-type(4n+1) { width: 1.5px; }
 
 /* PIE */
-.pie { background: var(--naranja); color: var(--grafito); padding: clamp(70px, 10vw, 130px) 0 48px; }
-.pie-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: end; }
-.pie-grande { font-size: clamp(44px, 6.6vw, 96px); font-weight: 800; line-height: .95; letter-spacing: -.04em; font-variation-settings: "wdth" 120; max-width: 12ch; }
-.pie-acciones { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 36px; }
+.pie { background: var(--naranja); color: var(--grafito); padding: clamp(72px, 10vw, 128px) 0 36px; }
+.pie-top { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 32px 64px; align-items: end; padding-bottom: clamp(48px, 7vw, 88px); }
+.pie-grande { font-size: clamp(44px, 6.4vw, 92px); font-weight: 900; line-height: .95; letter-spacing: -.04em; font-variation-settings: "wdth" 120; max-width: 10ch; }
+.pie-cta p { font-size: 17px; line-height: 1.5; max-width: 34ch; margin-bottom: 22px; }
+.pie-acciones { display: flex; gap: 10px; flex-wrap: wrap; }
 .pie .btn-naranja { background: var(--grafito); color: var(--hueso); }
 .pie .btn-naranja:hover { background: #000; }
 .pie .btn-linea { color: var(--grafito); border-color: rgba(29,30,26,.4); background: transparent; }
 .pie .btn-linea:hover { border-color: var(--grafito); }
-.pie-sol { display: block; width: 120px; margin-bottom: 18px; color: var(--grafito); }
-.pie-firma p { font-size: 15px; max-width: 34ch; }
+.pie-base { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 20px 40px; align-items: center; padding-top: 28px; border-top: 2px solid var(--grafito); }
+.pie-logo { width: 104px; height: auto; display: block; }
+.pie-firma { font-size: 14px; line-height: 1.5; max-width: 40ch; }
+.pie-datos { list-style: none; margin: 0; padding: 0; display: flex; gap: 8px 22px; flex-wrap: wrap; justify-content: flex-end; font-size: 14px; font-weight: 600; }
+.pie-datos a { text-decoration: none; border-bottom: 1px solid rgba(29,30,26,.35); padding-bottom: 1px; }
+.pie-datos a:hover { border-bottom-color: var(--grafito); }
 
 /* VISOR */
 .visor { padding: 0; border: 0; background: transparent; color: var(--hueso); max-width: none; max-height: none; width: 100%; height: 100%; }
@@ -482,7 +487,11 @@ p { margin: 0; }
   .hitos { grid-template-columns: 1fr 1fr; }
   .especialidades div + div { padding-left: 0; border-left: 0; border-top: 1px solid rgba(240,241,234,.1); }
   .especialidades div { padding: 18px 0; }
-  .seccion-cabeza, .detras-cabeza, .manifiesto-grid, .codigo-intro, .generador, .cotizador-cabeza, .pie-grid { grid-template-columns: 1fr; }
+  .pie-top, .seccion-cabeza, .detras-cabeza, .manifiesto-grid, .codigo-intro, .generador, .cotizador-cabeza { grid-template-columns: 1fr; }
+  .pie-base { grid-template-columns: 1fr; justify-items: start; }
+  .pie-datos { justify-content: flex-start; flex-direction: column; }
+  .logo-img { height: 16px; }
+  .nav-logo { border-right: 0; padding-right: 10px; }
   .grupo { grid-template-columns: 1fr; gap: 18px; padding: 28px 0; }
   .grupo-info { position: static; }
   .fila { margin-right: calc(var(--gutter) * -1); padding-right: var(--gutter); }
