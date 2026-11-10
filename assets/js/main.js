@@ -17,13 +17,13 @@
   };
   // Precios referenciales por video (propuesta De Marca). Edita aquí.
   const PLANES = [
-    { id: 'comercial', nombre: 'Video comercial', precio: 60, desc: 'Producción instantánea: solo se necesita estabilización y luz.',
+    { id: 'comercial', nombre: 'Video comercial', precio: 80, desc: 'Producción instantánea: solo se necesita estabilización y luz.',
       items: ['Rodaje con iPhone y estabilizador', 'Iluminación propia', 'Edición vertical para reels', 'Hasta 2 cambios'], ej: 'thor-refri' },
-    { id: 'voz', nombre: 'Video con voz', precio: 80, desc: 'Voz grabada con micrófonos profesionales: descriptivo, testimonial o narrativo.',
+    { id: 'voz', nombre: 'Video con voz', precio: 100, desc: 'Voz grabada con micrófonos profesionales: descriptivo, testimonial o narrativo.',
       items: ['Guion de voz', 'Micrófonos profesionales', 'Iluminación propia', 'Edición y mezcla de audio'], ej: 'iglace-hielo' },
-    { id: 'dinamico', nombre: 'Video dinámico', precio: 100, desc: 'Tomas aéreas con dron y/o cámara 360.',
+    { id: 'dinamico', nombre: 'Video dinámico', precio: 120, desc: 'Tomas aéreas con dron y/o cámara 360.',
       items: ['Tomas aéreas con dron', 'Cámara 360', 'Edición dinámica', 'Hasta 2 cambios'], ej: 'andes-domos-aire' },
-    { id: 'compuesto', nombre: 'Video compuesto', precio: 120, desc: 'Tomas aéreas y 360, con guion descriptivo y voz narrativa.',
+    { id: 'compuesto', nombre: 'Video compuesto', precio: 140, desc: 'Tomas aéreas y 360, con guion descriptivo y voz narrativa.',
       items: ['Guion descriptivo', 'Voz narrativa profesional', 'Dron y cámara 360', 'Edición completa con audio'], ej: 'mh-green', destacado: true }
   ];
   const DESTACADOS = ['luis-815k', 'mh-green', 'andes-terraza', 'lemans-sorteo', 'cerrolobo-aire', 'luis-kr22', 'iglace-hielo', 'thor-cocina', 'ypqn-container', 'gt-autodromo', 'pod-huma2'];
