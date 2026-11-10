@@ -29,7 +29,7 @@ window.GRUPOS = [
   "id": "thor",
   "nombre": "Thor Kitchen",
   "rubro": "producto",
-  "texto": "Estrategia de comunicación continua: contenido genuino y comercial a la vez, medido mes a mes para reajustar lo que haga falta."
+  "texto": "Estrategia de comunicación continua, contenido genuino y comercial medido mes a mes, y cobertura en vivo de la Copa Audi en Costa Jama."
  },
  {
   "id": "iglace",
@@ -107,7 +107,31 @@ window.GRUPOS = [
   "id": "ox",
   "nombre": "OX Sport Agency",
   "rubro": "eventos",
-  "texto": "Cobertura de lanzamientos, conferencias y eventos deportivos."
+  "texto": "Cobertura de lanzamientos y conferencias, y el OX Podcast: historias de deportistas que van más allá de lo competitivo."
+ },
+ {
+  "id": "luis-cross",
+  "nombre": "Luis Cross",
+  "rubro": "deporte",
+  "texto": "Marca personal de un motociclista que compite con un solo brazo: 4,23 millones de vistas en TikTok en ocho meses y su primer podio como piloto profesional de Factory."
+ },
+ {
+  "id": "lemans",
+  "nombre": "24 Horas de Le Mans con Motul",
+  "rubro": "eventos",
+  "texto": "La primera cobertura intercontinental: el relato en tiempo real desde dentro de una de las carreras más importantes del mundo."
+ },
+ {
+  "id": "recovery",
+  "nombre": "Recovery: 10 años",
+  "rubro": "salud",
+  "texto": "Antes, durante y después del festival por sus diez años: 5K, CrossFit y comunidad, contados en tiempo real."
+ },
+ {
+  "id": "promotion",
+  "nombre": "Pro Motion Sport Marketing",
+  "rubro": "deporte",
+  "texto": "Comunicación en primera persona: explicamos y damos contexto a los hitos del deporte, con voz propia."
  },
  {
   "id": "automovilismo",
@@ -866,5 +890,238 @@ window.VIDEOS = [
   "titulo": "Persecución en carretera",
   "vistas": 0,
   "url": "https://www.instagram.com/reel/CnD2V5RgKNo/"
+ },
+ {
+  "id": "luis-815k",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "storytelling",
+  "titulo": "El público lo rodea",
+  "vistas": 815269,
+  "url": "https://www.tiktok.com/@luis.cross.124/video/7551610416351153464",
+  "video": "assets/videos/luis-815k.mp4"
+ },
+ {
+  "id": "luis-kr22",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "producto",
+  "titulo": "La moto adaptada",
+  "vistas": 502192,
+  "url": "https://www.tiktok.com/@luis.cross.124/video/7559364131120319800",
+  "video": "assets/videos/luis-kr22.mp4"
+ },
+ {
+  "id": "luis-no-puedes",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "testimonial",
+  "titulo": "“Nunca se rindan”",
+  "vistas": 501224,
+  "url": "https://www.tiktok.com/@luis.cross.124/video/7564606977314147602",
+  "video": "assets/videos/luis-no-puedes.mp4"
+ },
+ {
+  "id": "luis-lodo",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "dinamico",
+  "titulo": "“Ya comimos lodo”",
+  "vistas": 319211,
+  "url": "https://www.tiktok.com/@luis.cross.124/video/7576032455027657991",
+  "video": "assets/videos/luis-lodo.mp4"
+ },
+ {
+  "id": "luis-palora",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "dinamico",
+  "titulo": "Debut en el Oriente",
+  "vistas": 300707,
+  "url": "https://www.tiktok.com/@luis.cross.124/video/7565338973565144338",
+  "video": "assets/videos/luis-palora.mp4"
+ },
+ {
+  "id": "luis-podio-montufar",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "cobertura",
+  "titulo": "Su primer podio",
+  "vistas": 259385,
+  "url": "https://www.tiktok.com/@luis.cross.124/video/7551988128471354635",
+  "video": "assets/videos/luis-podio-montufar.mp4"
+ },
+ {
+  "id": "luis-gracias-factory",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "testimonial",
+  "titulo": "Un sueño cumplido",
+  "vistas": 255327,
+  "url": "https://www.tiktok.com/@luis.cross.124/video/7632526814124002578",
+  "video": "assets/videos/luis-gracias-factory.mp4"
+ },
+ {
+  "id": "luis-nuevo-reto",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "storytelling",
+  "titulo": "Entrenado por un campeón",
+  "vistas": 97674,
+  "url": "https://www.tiktok.com/@luis.cross.124/video/7583515868236270866",
+  "video": "assets/videos/luis-nuevo-reto.mp4"
+ },
+ {
+  "id": "lemans-sorteo",
+  "grupo": "lemans",
+  "rubro": "eventos",
+  "estilo": "cobertura",
+  "titulo": "Desde el camión de Motul",
+  "vistas": 20070,
+  "url": "https://www.instagram.com/reel/DZiF-pDtKV-/"
+ },
+ {
+  "id": "lemans-anuncio",
+  "grupo": "lemans",
+  "rubro": "eventos",
+  "estilo": "voz",
+  "titulo": "Lo que empezó como un sueño",
+  "vistas": 3606,
+  "url": "https://www.instagram.com/reel/DZdpnq0NXsl/"
+ },
+ {
+  "id": "lemans-12h",
+  "grupo": "lemans",
+  "rubro": "eventos",
+  "estilo": "cobertura",
+  "titulo": "Ni 12 de las 24 horas",
+  "vistas": 1324,
+  "url": "https://www.instagram.com/reel/DZqfexLNGX-/"
+ },
+ {
+  "id": "lemans-primeras-horas",
+  "grupo": "lemans",
+  "rubro": "eventos",
+  "estilo": "contemplativo",
+  "titulo": "Las primeras horas",
+  "vistas": 1231,
+  "url": "https://www.instagram.com/reel/DZkLBWyNoTB/"
+ },
+ {
+  "id": "recovery-anuncio",
+  "grupo": "recovery",
+  "rubro": "salud",
+  "estilo": "voz",
+  "titulo": "Ahora sí es oficial",
+  "vistas": 3718,
+  "url": "https://www.instagram.com/reel/DTyz5l4jafP/"
+ },
+ {
+  "id": "recovery-teaser",
+  "grupo": "recovery",
+  "rubro": "salud",
+  "estilo": "storytelling",
+  "titulo": "Donde empezó todo",
+  "vistas": 2716,
+  "url": "https://www.instagram.com/reel/DTrFmYPDXuQ/"
+ },
+ {
+  "id": "recovery-gracias",
+  "grupo": "recovery",
+  "rubro": "salud",
+  "estilo": "voz",
+  "titulo": "Gracias por diez años",
+  "vistas": 2671,
+  "url": "https://www.instagram.com/reel/DUZR311Aeni/"
+ },
+ {
+  "id": "recovery-8anios",
+  "grupo": "recovery",
+  "rubro": "salud",
+  "estilo": "testimonial",
+  "titulo": "Glenda Morejón, atleta olímpica",
+  "vistas": 2227,
+  "url": "https://www.instagram.com/reel/DT_uny2DXQJ/"
+ },
+ {
+  "id": "recovery-fiesta",
+  "grupo": "recovery",
+  "rubro": "salud",
+  "estilo": "cobertura",
+  "titulo": "El festival en vivo",
+  "vistas": 2212,
+  "url": "https://www.instagram.com/reel/DUOcFLHEWQ8/"
+ },
+ {
+  "id": "recovery-dorsales",
+  "grupo": "recovery",
+  "rubro": "salud",
+  "estilo": "cobertura",
+  "titulo": "Dorsales y muro de firmas",
+  "vistas": 1787,
+  "url": "https://www.instagram.com/reel/DUMnlUUjRc3/"
+ },
+ {
+  "id": "thor-copa-dia1",
+  "grupo": "thor",
+  "rubro": "producto",
+  "estilo": "cobertura",
+  "titulo": "Copa Audi: la voz de los anfitriones",
+  "vistas": 3611,
+  "url": "https://www.instagram.com/reel/DX1xjOiO0uv/"
+ },
+ {
+  "id": "thor-copa-previa",
+  "grupo": "thor",
+  "rubro": "producto",
+  "estilo": "cobertura",
+  "titulo": "Copa Audi: el poder y la precisión",
+  "vistas": 2785,
+  "url": "https://www.instagram.com/reel/DXx32ebusNy/"
+ },
+ {
+  "id": "pod-huma2",
+  "grupo": "ox",
+  "rubro": "eventos",
+  "estilo": "testimonial",
+  "titulo": "OX Podcast: “Me aburrí del fútbol…”",
+  "vistas": 21257,
+  "url": "https://www.instagram.com/reel/DVHE3aXjn-r/"
+ },
+ {
+  "id": "pod-huma1",
+  "grupo": "ox",
+  "rubro": "eventos",
+  "estilo": "storytelling",
+  "titulo": "OX Podcast: de Ecuador a Mónaco",
+  "vistas": 5294,
+  "url": "https://www.instagram.com/reel/DUvj2w5Dtsv/"
+ },
+ {
+  "id": "pod-pablo-v1",
+  "grupo": "ox",
+  "rubro": "eventos",
+  "estilo": "testimonial",
+  "titulo": "OX Podcast: Pablo Vargas",
+  "vistas": 4073,
+  "url": "https://www.instagram.com/reel/Db39_FeB0_C/"
+ },
+ {
+  "id": "pod-pablo-v2",
+  "grupo": "ox",
+  "rubro": "eventos",
+  "estilo": "storytelling",
+  "titulo": "OX Podcast: no corre solo",
+  "vistas": 2614,
+  "url": "https://www.instagram.com/reel/DcPpb8fONg1/"
+ },
+ {
+  "id": "promotion-camara",
+  "grupo": "promotion",
+  "rubro": "deporte",
+  "estilo": "voz",
+  "titulo": "Daniel a cámara: contexto del deporte",
+  "vistas": 7358,
+  "url": "https://www.instagram.com/p/DRnFM1HD5La/"
  }
 ];

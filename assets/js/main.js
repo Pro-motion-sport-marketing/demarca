@@ -26,7 +26,7 @@
     { id: 'compuesto', nombre: 'Video compuesto', precio: 120, desc: 'Tomas aéreas y 360, con guion descriptivo y voz narrativa.',
       items: ['Guion descriptivo', 'Voz narrativa profesional', 'Dron y cámara 360', 'Edición completa con audio'], ej: 'mh-green', destacado: true }
   ];
-  const DESTACADOS = ['mh-green', 'andes-terraza', 'cerrolobo-aire', 'iglace-hielo', 'thor-cocina', 'ypqn-container', 'gt-autodromo', 'vcomer-showroom', 'cuenca-catedral'];
+  const DESTACADOS = ['luis-815k', 'mh-green', 'andes-terraza', 'lemans-sorteo', 'cerrolobo-aire', 'luis-kr22', 'iglace-hielo', 'thor-cocina', 'ypqn-container', 'gt-autodromo', 'pod-huma2'];
 
   const $ = s => document.querySelector(s);
   const byId = id => VIDEOS.find(v => v.id === id);
@@ -34,6 +34,7 @@
   function vistas(n) {
     if (!n) return '';
     if (n >= 1e6) return (n / 1e6).toFixed(1).replace('.', ',') + ' M';
+    if (n >= 100000) return Math.round(n / 1000) + ' mil';
     if (n >= 10000) return (Math.round(n / 100) / 10).toString().replace('.', ',').replace(/,0$/, '') + ' mil';
     return n.toLocaleString('es-EC');
   }
@@ -69,13 +70,18 @@
     $('#visorDatos').textContent = `${RUBROS[v.rubro]}, ${ESTILOS[v.estilo].toLowerCase()}. ${v.vistas ? reproducciones(v.vistas) + '.' : ''}`;
     const medio = $('#visorMedio');
     const abrirBtn = $('#visorAbrir');
-    if (v.url) {
+    if (v.video) {
+      medio.innerHTML = `<video src="${v.video}" poster="${thumb(v)}" controls autoplay playsinline></video>`;
+      abrirBtn.hidden = !v.url; abrirBtn.href = v.url || '#';
+      abrirBtn.textContent = v.url.includes('tiktok.com') ? 'Ver en TikTok' : 'Ver en Instagram';
+    } else if (v.url) {
       const drive = v.url.includes('drive.google');
-      const src = drive ? v.url : v.url + 'embed/';
+      const tiktok = v.url.includes('tiktok.com');
+      const src = drive ? v.url : tiktok ? 'https://www.tiktok.com/embed/v2/' + v.url.split('/video/')[1] : v.url + 'embed/';
       medio.innerHTML = `<iframe src="${src}" title="${v.titulo}" loading="lazy" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>`;
       abrirBtn.hidden = false;
       abrirBtn.href = drive ? v.url.replace('/preview', '/view') : v.url;
-      abrirBtn.textContent = drive ? 'Abrir en Drive' : 'Abrir en Instagram';
+      abrirBtn.textContent = drive ? 'Abrir en Drive' : tiktok ? 'Abrir en TikTok' : 'Abrir en Instagram';
     } else {
       medio.innerHTML = `<div class="visor-sin"><img src="${thumb(v)}" alt=""><p>Este video está en la cuenta de ${g.nombre}. Escríbeme y te lo envío.</p></div>`;
       abrirBtn.hidden = true;
@@ -127,7 +133,7 @@
   puntos.forEach(p => p.addEventListener('click', () => { ir(+p.dataset.i); auto(); }));
   $('#heroPrev').onclick = () => { ir(act - 1); auto(); };
   $('#heroNext').onclick = () => { ir(act + 1); auto(); };
-  const escena = document.querySelector('.hero-marco');
+  const escena = document.querySelector('.hero-escena');
   escena.addEventListener('mouseenter', () => clearInterval(timer));
   escena.addEventListener('mouseleave', auto);
   escena.addEventListener('focusin', () => clearInterval(timer));
