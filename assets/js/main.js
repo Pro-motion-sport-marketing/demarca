@@ -48,11 +48,6 @@
     el.innerHTML = C.svgSol(cod, { reflejo: k === 'pie', label: k === 'nav' ? 'Logo De Marca' : 'Sol De Marca' });
   });
 
-  /* ---------- Cifras ---------- */
-  $('#cifraVistas').textContent = vistas(VIDEOS.reduce((a, v) => a + v.vistas, 0));
-  $('#cifraVideos').textContent = VIDEOS.length;
-  $('#cifraMarcas').textContent = GRUPOS.length;
-
   /* ---------- Visor ---------- */
   const visor = $('#visor');
   let lista = [], pos = 0;
@@ -214,6 +209,17 @@
     p.addEventListener('mouseleave', () => foco(null)); p.addEventListener('blur', () => foco(null));
   });
 
+
+  /* ---------- Resultados ---------- */
+  const GT = [['Panamá', 3470000], ['500 km de Panamá', 3280000], ['Guyana', 2410000], ['Barbados', 5390000], ['Puebla, México', 4680000]];
+  const maxGT = Math.max(...GT.map(g => g[1]));
+  const mill = n => (n / 1e6).toFixed(2).replace('.', ',') + ' M';
+  $('#barrasGT').innerHTML = GT.map(([f, n]) => `<li class="barra-fila" title="${f}: ${mill(n)} visualizaciones"><span>${f}</span><div class="barra-pista" style="--w:${(n / maxGT * 78).toFixed(1)}%"><div class="barra-relleno"></div><b class="barra-valor">${mill(n)}</b></div></li>`).join('');
+  $('#tablaGT tbody').innerHTML = GT.map(([f, n]) => `<tr><td>${f}</td><td>${n.toLocaleString('es-EC')}</td></tr>`).join('');
+  const totalV = VIDEOS.reduce((a, v) => a + v.vistas, 0);
+  $('#megaVistas').textContent = '+' + Math.floor(totalV / 1e6) + ' M';
+  $('#megaProyectos').textContent = '+' + GRUPOS.length;
+
   /* ---------- Planes y cotizador ---------- */
   const cant = Object.fromEntries(PLANES.map(p => [p.id, 0]));
   $('#tarjetasPlan').innerHTML = PLANES.map(p => {
@@ -270,6 +276,6 @@
     const io = new IntersectionObserver(en => en.forEach(x => {
       if (x.isIntersecting) links.forEach(l => l.setAttribute('aria-current', l.getAttribute('href') === '#' + x.target.id));
     }), { rootMargin: '-45% 0px -50% 0px' });
-    ['portafolio', 'codigo', 'planes', 'cursos'].forEach(id => io.observe(document.getElementById(id)));
+    ['portafolio', 'resultados', 'codigo', 'planes', 'cursos'].forEach(id => io.observe(document.getElementById(id)));
   }
 })();
