@@ -433,7 +433,7 @@ window.VIDEOS = [
   "estilo": "testimonial",
   "titulo": "Después del tratamiento",
   "vistas": 1265,
-  "url": ""
+  "url": "https://www.instagram.com/reel/CtKIoGuO3Id/"
  },
  {
   "id": "blanc-3",
@@ -442,7 +442,7 @@ window.VIDEOS = [
   "estilo": "dinamico",
   "titulo": "Consulta en movimiento",
   "vistas": 5838,
-  "url": ""
+  "url": "https://www.instagram.com/reel/CsXMvGFJcIn/"
  },
  {
   "id": "blanc-6",
@@ -451,7 +451,7 @@ window.VIDEOS = [
   "estilo": "storytelling",
   "titulo": "Odontología digital",
   "vistas": 12500,
-  "url": ""
+  "url": "https://www.instagram.com/reel/CqjNQ2uJs8M/"
  },
  {
   "id": "latino-oftalmo",
@@ -460,7 +460,7 @@ window.VIDEOS = [
   "estilo": "voz",
   "titulo": "Una nueva era en oftalmología",
   "vistas": 0,
-  "url": ""
+  "url": "https://drive.google.com/file/d/1Iv-cZa-iGmZbNIB5zjDee5Y1gNxpS5-X/preview"
  },
  {
   "id": "andes-domos-aire",
