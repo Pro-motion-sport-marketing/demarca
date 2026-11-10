@@ -96,7 +96,7 @@ p { margin: 0; }
   filter: brightness(calc(1 - var(--a) * .2));
 }
 .cf-card[hidden] { display: block; opacity: 0; pointer-events: none; }
-.cf-card img { width: 100%; height: 100%; object-fit: cover; }
+.cf-card img, .cf-card video { width: 100%; height: 100%; object-fit: cover; display: block; }
 .cf-card .cf-play { position: absolute; inset: auto 14px 14px auto; width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: rgba(240,241,234,.9); color: var(--grafito); opacity: 0; transform: scale(.8); transition: opacity .3s, transform .3s; }
 .cf-card.activa .cf-play { opacity: 1; transform: none; }
 .cf-play svg { width: 18px; margin-left: 2px; fill: currentColor; }

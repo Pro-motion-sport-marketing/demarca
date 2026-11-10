@@ -113,7 +113,7 @@ window.GRUPOS = [
   "id": "luis-cross",
   "nombre": "Luis Cross",
   "rubro": "deporte",
-  "texto": "Marca personal de un motociclista que compite con un solo brazo: 4,23 millones de vistas en TikTok en ocho meses y su primer podio como piloto profesional de Factory."
+  "texto": "Marca personal de un motociclista que compite con un solo brazo, en colaboración con Factory Bike: cobertura en tiempo real, activaciones y su historia de superación."
  },
  {
   "id": "lemans",
@@ -619,7 +619,8 @@ window.VIDEOS = [
   "estilo": "producto",
   "titulo": "Espresso en cámara lenta",
   "vistas": 15500,
-  "url": "https://www.instagram.com/reel/DBaDBK3sHFo/"
+  "url": "https://www.instagram.com/reel/DBaDBK3sHFo/",
+  "clip": "assets/clips/iglace-espresso.mp4"
  },
  {
   "id": "iglace-hielo",
@@ -892,93 +893,14 @@ window.VIDEOS = [
   "url": "https://www.instagram.com/reel/CnD2V5RgKNo/"
  },
  {
-  "id": "luis-815k",
-  "grupo": "luis-cross",
-  "rubro": "deporte",
-  "estilo": "storytelling",
-  "titulo": "El público lo rodea",
-  "vistas": 815269,
-  "url": "https://www.tiktok.com/@luis.cross.124/video/7551610416351153464",
-  "video": "assets/videos/luis-815k.mp4"
- },
- {
-  "id": "luis-kr22",
-  "grupo": "luis-cross",
-  "rubro": "deporte",
-  "estilo": "producto",
-  "titulo": "La moto adaptada",
-  "vistas": 502192,
-  "url": "https://www.tiktok.com/@luis.cross.124/video/7559364131120319800",
-  "video": "assets/videos/luis-kr22.mp4"
- },
- {
-  "id": "luis-no-puedes",
-  "grupo": "luis-cross",
-  "rubro": "deporte",
-  "estilo": "testimonial",
-  "titulo": "“Nunca se rindan”",
-  "vistas": 501224,
-  "url": "https://www.tiktok.com/@luis.cross.124/video/7564606977314147602",
-  "video": "assets/videos/luis-no-puedes.mp4"
- },
- {
-  "id": "luis-lodo",
-  "grupo": "luis-cross",
-  "rubro": "deporte",
-  "estilo": "dinamico",
-  "titulo": "“Ya comimos lodo”",
-  "vistas": 319211,
-  "url": "https://www.tiktok.com/@luis.cross.124/video/7576032455027657991",
-  "video": "assets/videos/luis-lodo.mp4"
- },
- {
-  "id": "luis-palora",
-  "grupo": "luis-cross",
-  "rubro": "deporte",
-  "estilo": "dinamico",
-  "titulo": "Debut en el Oriente",
-  "vistas": 300707,
-  "url": "https://www.tiktok.com/@luis.cross.124/video/7565338973565144338",
-  "video": "assets/videos/luis-palora.mp4"
- },
- {
-  "id": "luis-podio-montufar",
-  "grupo": "luis-cross",
-  "rubro": "deporte",
-  "estilo": "cobertura",
-  "titulo": "Su primer podio",
-  "vistas": 259385,
-  "url": "https://www.tiktok.com/@luis.cross.124/video/7551988128471354635",
-  "video": "assets/videos/luis-podio-montufar.mp4"
- },
- {
-  "id": "luis-gracias-factory",
-  "grupo": "luis-cross",
-  "rubro": "deporte",
-  "estilo": "testimonial",
-  "titulo": "Un sueño cumplido",
-  "vistas": 255327,
-  "url": "https://www.tiktok.com/@luis.cross.124/video/7632526814124002578",
-  "video": "assets/videos/luis-gracias-factory.mp4"
- },
- {
-  "id": "luis-nuevo-reto",
-  "grupo": "luis-cross",
-  "rubro": "deporte",
-  "estilo": "storytelling",
-  "titulo": "Entrenado por un campeón",
-  "vistas": 97674,
-  "url": "https://www.tiktok.com/@luis.cross.124/video/7583515868236270866",
-  "video": "assets/videos/luis-nuevo-reto.mp4"
- },
- {
   "id": "lemans-sorteo",
   "grupo": "lemans",
   "rubro": "eventos",
   "estilo": "cobertura",
   "titulo": "Desde el camión de Motul",
   "vistas": 20070,
-  "url": "https://www.instagram.com/reel/DZiF-pDtKV-/"
+  "url": "https://www.instagram.com/reel/DZiF-pDtKV-/",
+  "clip": "assets/clips/lemans-sorteo.mp4"
  },
  {
   "id": "lemans-anuncio",
@@ -987,7 +909,8 @@ window.VIDEOS = [
   "estilo": "voz",
   "titulo": "Lo que empezó como un sueño",
   "vistas": 3606,
-  "url": "https://www.instagram.com/reel/DZdpnq0NXsl/"
+  "url": "https://www.instagram.com/reel/DZdpnq0NXsl/",
+  "clip": "assets/clips/lemans-anuncio.mp4"
  },
  {
   "id": "lemans-12h",
@@ -1014,7 +937,8 @@ window.VIDEOS = [
   "estilo": "voz",
   "titulo": "Ahora sí es oficial",
   "vistas": 3718,
-  "url": "https://www.instagram.com/reel/DTyz5l4jafP/"
+  "url": "https://www.instagram.com/reel/DTyz5l4jafP/",
+  "clip": "assets/clips/recovery-anuncio.mp4"
  },
  {
   "id": "recovery-teaser",
@@ -1068,7 +992,8 @@ window.VIDEOS = [
   "estilo": "cobertura",
   "titulo": "Copa Audi: la voz de los anfitriones",
   "vistas": 3611,
-  "url": "https://www.instagram.com/reel/DX1xjOiO0uv/"
+  "url": "https://www.instagram.com/reel/DX1xjOiO0uv/",
+  "clip": "assets/clips/thor-copa-dia1.mp4"
  },
  {
   "id": "thor-copa-previa",
@@ -1086,7 +1011,8 @@ window.VIDEOS = [
   "estilo": "testimonial",
   "titulo": "OX Podcast: “Me aburrí del fútbol…”",
   "vistas": 21257,
-  "url": "https://www.instagram.com/reel/DVHE3aXjn-r/"
+  "url": "https://www.instagram.com/reel/DVHE3aXjn-r/",
+  "clip": "assets/clips/pod-huma2.mp4"
  },
  {
   "id": "pod-huma1",
@@ -1122,6 +1048,81 @@ window.VIDEOS = [
   "estilo": "voz",
   "titulo": "Daniel a cámara: contexto del deporte",
   "vistas": 7358,
-  "url": "https://www.instagram.com/p/DRnFM1HD5La/"
+  "url": "https://www.instagram.com/p/DRnFM1HD5La/",
+  "clip": "assets/clips/promotion-camara.mp4"
+ },
+ {
+  "id": "luis-no-puedes",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "testimonial",
+  "titulo": "“No puedes manejar moto”",
+  "vistas": 71684,
+  "url": "https://www.instagram.com/p/DQLNP9xjbqc/",
+  "clip": "assets/clips/luis-no-puedes.mp4"
+ },
+ {
+  "id": "luis-factory",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "cobertura",
+  "titulo": "¡Esto es Factory!",
+  "vistas": 47992,
+  "url": "https://www.instagram.com/p/DK7Ed1vOVB8/",
+  "clip": "assets/clips/luis-factory.mp4"
+ },
+ {
+  "id": "luis-pawkar",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "storytelling",
+  "titulo": "Pawkar Raymi en Cañar",
+  "vistas": 21271,
+  "url": "https://www.instagram.com/p/DU0Yc9xkc4y/"
+ },
+ {
+  "id": "luis-lanzamiento",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "cobertura",
+  "titulo": "Lanzamiento del Team Factory Bike",
+  "vistas": 15593,
+  "url": "https://www.instagram.com/p/DJX9DxZJdc2/"
+ },
+ {
+  "id": "luis-carrera",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "dinamico",
+  "titulo": "¡¡Qué carrera!!",
+  "vistas": 10433,
+  "url": "https://www.instagram.com/p/DLgVywBJICe/"
+ },
+ {
+  "id": "luis-debut",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "cobertura",
+  "titulo": "Compite en casa",
+  "vistas": 9869,
+  "url": "https://www.instagram.com/p/DLffe9Tx94d/"
+ },
+ {
+  "id": "luis-fin-semana",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "storytelling",
+  "titulo": "Un fin de semana con Factory Bike",
+  "vistas": 7293,
+  "url": "https://www.instagram.com/p/DOPcOiuCbaY/"
+ },
+ {
+  "id": "luis-reconocimiento",
+  "grupo": "luis-cross",
+  "rubro": "deporte",
+  "estilo": "cobertura",
+  "titulo": "Mejor deportista del año",
+  "vistas": 7165,
+  "url": "https://www.instagram.com/p/DLWOZnENEOU/"
  }
 ];

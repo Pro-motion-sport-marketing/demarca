@@ -26,7 +26,7 @@
     { id: 'compuesto', nombre: 'Video compuesto', precio: 150, desc: 'Tomas aéreas y 360, con guion descriptivo y voz narrativa.',
       items: ['Guion descriptivo', 'Voz narrativa profesional', 'Dron y cámara 360', 'Edición completa con audio'], ej: 'mh-green', destacado: true }
   ];
-  const DESTACADOS = ['luis-815k', 'mh-green', 'andes-terraza', 'lemans-sorteo', 'cerrolobo-aire', 'luis-kr22', 'iglace-hielo', 'thor-cocina', 'ypqn-container', 'gt-autodromo', 'pod-huma2'];
+  const DESTACADOS = ['luis-no-puedes', 'lemans-sorteo', 'iglace-espresso', 'luis-factory', 'thor-copa-dia1', 'pod-huma2', 'recovery-anuncio', 'promotion-camara', 'lemans-anuncio'];
 
   const $ = s => document.querySelector(s);
   const byId = id => VIDEOS.find(v => v.id === id);
@@ -102,7 +102,7 @@
   let act = 0, timer = null, capa = 0;
   const capas = [document.querySelector('.hf-a'), document.querySelector('.hf-b')];
   cf.innerHTML = dest.map((v, i) => `<button class="cf-card" data-i="${i}" aria-label="${G[v.grupo].nombre}: ${v.titulo}">
-    <img src="${thumb(v)}" alt="" ${i > 3 ? 'loading="lazy"' : ''}><span class="cf-play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button>`).join('');
+    ${v.clip ? `<video muted loop playsinline preload="${i < 2 ? 'auto' : 'none'}" poster="${thumb(v)}" src="${v.clip}"></video>` : `<img src="${thumb(v)}" alt="" ${i > 3 ? 'loading="lazy"' : ''}>`}<span class="cf-play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button>`).join('');
   $('#heroPuntos').innerHTML = dest.map((v, i) => `<button role="tab" aria-label="Video ${i + 1}" data-i="${i}"></button>`).join('');
   $('#heroTotal').textContent = dest.length;
   const cards = [...cf.children], puntos = [...$('#heroPuntos').children];
@@ -114,6 +114,8 @@
       c.style.setProperty('--o', o); c.style.setProperty('--a', a);
       c.hidden = a > 3; c.tabIndex = a === 0 ? 0 : -1;
       c.classList.toggle('activa', a === 0);
+      const vid = c.querySelector('video');
+      if (vid) { if (a === 0 && !reduceMotion) { vid.play().catch(() => {}); } else { vid.pause(); } }
     });
     puntos.forEach((p, i) => p.setAttribute('aria-selected', i === act));
     const v = dest[act];
@@ -125,7 +127,7 @@
     capas[capa].classList.add('on'); capas[1 - capa].classList.remove('on');
   }
   function ir(i) { act = (i + dest.length) % dest.length; pintarHero(); }
-  function auto() { if (reduceMotion) return; clearInterval(timer); timer = setInterval(() => ir(act + 1), 4800); }
+  function auto() { if (reduceMotion) return; clearInterval(timer); timer = setInterval(() => ir(act + 1), 9000); }
   cards.forEach(c => c.addEventListener('click', () => {
     const i = +c.dataset.i;
     if (i === act) abrir(dest[i].id, dest.map(v => v.id)); else { ir(i); auto(); }
@@ -211,26 +213,6 @@
     p.addEventListener('mouseenter', () => foco(i)); p.addEventListener('focus', () => foco(i));
     p.addEventListener('mouseleave', () => foco(null)); p.addEventListener('blur', () => foco(null));
   });
-
-  const inp = $('#nombreMarca');
-  function generar() {
-    const nombre = inp.value.trim();
-    const cod = C.codigoDe(nombre);
-    $('#solGenerado').innerHTML = C.svgSol(cod, { id: 'solgen', label: 'Código generado para ' + (nombre || 'De Marca') });
-    $('#nombreGenerado').textContent = nombre || 'De Marca';
-    $('#serieGenerada').textContent = C.serie(cod);
-    $('#lectura').textContent = nombre ? C.lectura(cod) : 'Escribe un nombre y mira cómo cambia el sol.';
-    $('#pedirCodigo').href = wa(`Hola Daniel, generé el código de ${nombre || 'mi marca'} (${C.serie(cod)}) en tu web y quiero que lo leamos juntos.`);
-  }
-  inp.addEventListener('input', generar);
-  generar();
-  $('#descargarCodigo').onclick = () => {
-    const svg = $('#solGenerado svg').outerHTML.replace('fill="currentColor"', 'fill="#F7931E"').replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }));
-    a.download = 'codigo-' + ((inp.value.trim() || 'de-marca').toLowerCase().normalize('NFD').replace(/[^\w]+/g, '-')) + '.svg';
-    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-  };
 
   /* ---------- Planes y cotizador ---------- */
   const cant = Object.fromEntries(PLANES.map(p => [p.id, 0]));
