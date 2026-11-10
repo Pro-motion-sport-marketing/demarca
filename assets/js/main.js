@@ -23,7 +23,7 @@
       items: ['Guion de voz', 'Micrófonos profesionales', 'Iluminación propia', 'Edición y mezcla de audio'], ej: 'iglace-hielo' },
     { id: 'dinamico', nombre: 'Video dinámico', precio: 120, desc: 'Tomas aéreas con dron y/o cámara 360.',
       items: ['Tomas aéreas con dron', 'Cámara 360', 'Edición dinámica', 'Hasta 2 cambios'], ej: 'andes-domos-aire' },
-    { id: 'compuesto', nombre: 'Video compuesto', precio: 140, desc: 'Tomas aéreas y 360, con guion descriptivo y voz narrativa.',
+    { id: 'compuesto', nombre: 'Video compuesto', precio: 150, desc: 'Tomas aéreas y 360, con guion descriptivo y voz narrativa.',
       items: ['Guion descriptivo', 'Voz narrativa profesional', 'Dron y cámara 360', 'Edición completa con audio'], ej: 'mh-green', destacado: true }
   ];
   const DESTACADOS = ['luis-815k', 'mh-green', 'andes-terraza', 'lemans-sorteo', 'cerrolobo-aire', 'luis-kr22', 'iglace-hielo', 'thor-cocina', 'ypqn-container', 'gt-autodromo', 'pod-huma2'];
