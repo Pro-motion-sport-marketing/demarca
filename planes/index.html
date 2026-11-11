@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es" data-root="../" data-page="planes">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planes y cotización · De Marca</title>
+<meta name="description" content="Videos desde $80 y coberturas de eventos desde $250. Arma tu cotización y envíala por WhatsApp.">
+<meta property="og:title" content="Planes y cotización · De Marca">
+<meta property="og:description" content="Contenido que deja marca. Producción audiovisual móvil, cobertura en tiempo real y estrategia de comunicación.">
+<meta property="og:image" content="assets/brand/og.jpg">
+<meta name="theme-color" content="#1D1E1A">
+<link rel="icon" href="../assets/brand/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+<header class="nav" id="nav">
+  <a class="nav-logo" href=".././" aria-label="De Marca, inicio">
+    <img class="logo-img" src="../assets/brand/logo-demarca-h.png" alt="De Marca" width="720" height="85">
+  </a>
+  <nav class="nav-links" aria-label="Páginas">
+    <a href="../cobertura/" data-p="cobertura">Cobertura</a>
+    <a href="../portafolio/" data-p="portafolio">Portafolio</a>
+    <a href="../resultados/" data-p="resultados">Resultados</a>
+    <a href="../sobre-mi/" data-p="sobre-mi">Sobre mí</a>
+    <a href="../planes/" data-p="planes">Planes</a>
+    <a href="../cursos/" data-p="cursos">Cursos</a>
+  </nav>
+  <a class="btn btn-claro nav-cta" href="../planes/#cotizar">Cotizar</a>
+  <button class="nav-menu" type="button" aria-expanded="false" aria-controls="menuMovil" aria-label="Abrir menú"><span></span><span></span></button>
+</header>
+<div class="menu-movil" id="menuMovil" hidden>
+  <a href=".././">Inicio</a>
+  <a href="../cobertura/">Cobertura en tiempo real</a>
+  <a href="../portafolio/">Portafolio</a>
+  <a href="../resultados/">Resultados</a>
+  <a href="../sobre-mi/">Sobre mí</a>
+  <a href="../planes/">Planes y cotización</a>
+  <a href="../cursos/">Cursos</a>
+</div>
+
+<main id="contenido" class="pagina">
+<!-- PLANES + COTIZADOR -->
+<section class="planes" id="planes" aria-labelledby="tPlanes">
+  <p class="planes-fondo" aria-hidden="true">Planes</p>
+  <div class="contenedor">
+    <h1 id="tPlanes" class="sr">Planes y tipos de video</h1>
+    <div class="tarjetas-plan" id="tarjetasPlan"></div>
+
+    <h3 class="cob-mas-t planes-sub">Cobertura de eventos</h3>
+    <div class="cob-precios" id="cobPrecios"></div>
+
+    <div class="cotizador" id="cotizar">
+      <div class="cotizador-cabeza">
+        <h3>Arma tu cotización</h3>
+        <p>Elige cuántos videos de cada tipo necesitas. El total se calcula al instante y te llega lista por WhatsApp.</p>
+      </div>
+      <div class="cotizador-filas" id="cotizadorFilas"></div>
+      <div class="cotizador-total">
+        <div>
+          <p class="total-etiqueta">Total estimado</p>
+          <p class="total-valor" id="totalValor">$0</p>
+          <p class="total-nota" id="totalNota">Agrega al menos un video.</p>
+        </div>
+        <a class="btn btn-naranja" id="enviarCotizacion" href="#" target="_blank" rel="noopener" aria-disabled="true">Enviar por WhatsApp</a>
+      </div>
+      <ul class="condiciones">
+        <li>El servicio inicia con el 50% del valor total.</li>
+        <li>Hasta 2 cambios por video después de presentarlo.</li>
+        <li>Los viáticos fuera de la ciudad se cotizan aparte.</li>
+        <li>Valores referenciales por video. La propuesta final se ajusta a tu proyecto.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie" id="contacto">
+  <div class="contenedor">
+    <div class="pie-top">
+      <p class="pie-grande">Hablemos de tu marca.</p>
+      <div class="pie-cta">
+        <p>Cuéntame qué necesitas comunicar y te respondo con una propuesta a medida.</p>
+        <div class="pie-acciones">
+          <a class="btn btn-naranja" id="waPie" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a class="btn btn-linea" href="mailto:danielespinozaco@gmail.com">Enviar un correo</a>
+        </div>
+      </div>
+    </div>
+    <div class="pie-base">
+      <img class="pie-logo" src="../assets/brand/logo-demarca-oscuro-900.png" alt="De Marca" width="900" height="386" loading="lazy">
+      <p class="pie-firma">La marca de Daniel Espinoza, creador de contenido móvil y estratega de comunicación. Cuenca, Ecuador.</p>
+      <ul class="pie-datos">
+        <li><a href="https://wa.me/593984678812" target="_blank" rel="noopener">+593 98 467 8812</a></li>
+        <li><a href="mailto:danielespinozaco@gmail.com">danielespinozaco@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/pro_motion.ec/" target="_blank" rel="noopener">Pro Motion en Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<dialog class="visor" id="visor" aria-labelledby="visorTitulo">
+  <div class="visor-fondo" id="visorFondo" aria-hidden="true"></div>
+  <div class="visor-caja">
+    <div class="visor-medio" id="visorMedio"></div>
+    <div class="visor-info">
+      <p class="visor-marca" id="visorMarca"></p>
+      <h3 id="visorTitulo"></h3>
+      <p class="visor-desc" id="visorDesc"></p>
+      <p class="visor-datos" id="visorDatos"></p>
+      <div class="visor-acciones">
+        <a class="btn btn-linea" id="visorAbrir" href="#" target="_blank" rel="noopener">Abrir en Instagram</a>
+        <a class="btn btn-naranja" id="visorPedir" href="#" target="_blank" rel="noopener">Quiero un video así</a>
+      </div>
+      <div class="visor-nav">
+        <button class="flecha" id="visorPrev" aria-label="Video anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="flecha" id="visorNext" aria-label="Video siguiente"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <button class="visor-cerrar" id="visorCerrar" aria-label="Cerrar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+</dialog>
+
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

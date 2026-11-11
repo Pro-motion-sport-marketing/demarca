@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-root="" data-page="inicio">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>De Marca · Daniel Espinoza</title>
-<meta name="description" content="Producción audiovisual y estrategia de comunicación de Daniel Espinoza. Portafolio de videos para deporte, inmobiliario, turismo, salud, producto, gastronomía y más.">
+<meta name="description" content="Contenido que deja marca. Producción audiovisual móvil, cobertura en tiempo real y estrategia de comunicación de Daniel Espinoza.">
 <meta property="og:title" content="De Marca · Daniel Espinoza">
 <meta property="og:description" content="Contenido que deja marca. Producción audiovisual móvil, cobertura en tiempo real y estrategia de comunicación.">
 <meta property="og:image" content="assets/brand/og.jpg">
@@ -17,23 +17,33 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<a class="saltar" href="#portafolio">Ir al portafolio</a>
-
+<a class="saltar" href="#contenido">Ir al contenido</a>
 <header class="nav" id="nav">
-  <a class="nav-logo" href="#inicio" aria-label="De Marca, inicio">
+  <a class="nav-logo" href="./" aria-label="De Marca, inicio">
     <img class="logo-img" src="assets/brand/logo-demarca-h.png" alt="De Marca" width="720" height="85">
   </a>
-  <nav class="nav-links" aria-label="Secciones">
-    <a href="#cobertura">Cobertura</a>
-    <a href="#portafolio">Portafolio</a>
-    <a href="#resultados">Resultados</a>
-    <a href="#planes">Planes</a>
-    <a href="#cursos">Cursos</a>
+  <nav class="nav-links" aria-label="Páginas">
+    <a href="cobertura/" data-p="cobertura">Cobertura</a>
+    <a href="portafolio/" data-p="portafolio">Portafolio</a>
+    <a href="resultados/" data-p="resultados">Resultados</a>
+    <a href="sobre-mi/" data-p="sobre-mi">Sobre mí</a>
+    <a href="planes/" data-p="planes">Planes</a>
+    <a href="cursos/" data-p="cursos">Cursos</a>
   </nav>
-  <a class="btn btn-claro nav-cta" href="#cotizar">Cotizar</a>
+  <a class="btn btn-claro nav-cta" href="planes/#cotizar">Cotizar</a>
+  <button class="nav-menu" type="button" aria-expanded="false" aria-controls="menuMovil" aria-label="Abrir menú"><span></span><span></span></button>
 </header>
+<div class="menu-movil" id="menuMovil" hidden>
+  <a href="./">Inicio</a>
+  <a href="cobertura/">Cobertura en tiempo real</a>
+  <a href="portafolio/">Portafolio</a>
+  <a href="resultados/">Resultados</a>
+  <a href="sobre-mi/">Sobre mí</a>
+  <a href="planes/">Planes y cotización</a>
+  <a href="cursos/">Cursos</a>
+</div>
 
-<main>
+<main id="contenido">
 <!-- HERO -->
 <section class="hero" id="inicio" aria-label="Presentación">
   <div class="hero-fondo" aria-hidden="true"><div class="hf hf-a"></div><div class="hf hf-b"></div></div>
@@ -59,7 +69,7 @@
         <button class="flecha" id="heroPrev" aria-label="Video anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
         <button class="flecha" id="heroNext" aria-label="Video siguiente"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
       </div>
-      <a class="link-linea" href="#portafolio">Ver todo el portafolio</a>
+      <a class="link-linea" href="portafolio/">Ver todo el portafolio</a>
     </div>
   </div>
 </section>
@@ -78,247 +88,37 @@
   </div>
 </section>
 
-<!-- COBERTURA EN TIEMPO REAL -->
-<section class="cobertura" id="cobertura" aria-labelledby="tCobertura">
+<!-- ACCESOS -->
+<section class="accesos" aria-labelledby="tAccesos">
   <div class="contenedor">
-    <div class="seccion-cabeza">
-      <h2 id="tCobertura" class="titulo-xl">Cobertura en tiempo real</h2>
-      <p class="seccion-lead">Es mi especialidad. Produzco, edito y publico mientras el evento todavía está pasando: antes, durante y después, con celular, cámaras de acción, 360 y dron.</p>
-    </div>
-
-    <article class="cob-caso">
-      <header class="cob-caso-cab">
-        <div>
-          <p class="res-rubro">Caso completo · GT Challenge de las Américas, Panamá 2025</p>
-          <h3>Sebastián Merchán: un fin de semana de carrera, contado mientras pasaba</h3>
-        </div>
-        <dl class="cob-caso-datos">
-          <div><dt>104 mil</dt><dd>reproducciones en video</dd></div>
-          <div><dt>4</dt><dd>momentos cubiertos</dd></div>
-        </dl>
-      </header>
-      <ol class="cob-linea" id="cobLinea"></ol>
-    </article>
-
-    <div class="cob-mas">
-      <h3 class="cob-mas-t">Más coberturas</h3>
-      <div class="cob-tabs" id="cobTabs" role="tablist" aria-label="Coberturas por cliente"></div>
-      <div class="cob-panel" id="cobPanel" role="tabpanel"></div>
-    </div>
-
-    <h3 class="cob-mas-t">Cotiza tu cobertura</h3>
-    <div class="cob-precios" id="cobPrecios"></div>
-  </div>
-</section>
-
-<!-- PORTAFOLIO -->
-<section class="portafolio" id="portafolio" aria-labelledby="tPortafolio">
-  <div class="contenedor">
-    <div class="seccion-cabeza">
-      <h2 id="tPortafolio" class="titulo-xl">Portafolio</h2>
-      <p class="seccion-lead">Organizado por marca. Filtra por rubro o por estilo de producción y toca cualquier video para verlo aquí mismo.</p>
-    </div>
-    <div class="filtros">
-      <div class="filtro-fila" role="group" aria-label="Filtrar por rubro">
-        <span class="filtro-nombre">Rubro</span>
-        <div class="chips" id="chipsRubro"></div>
-      </div>
-      <div class="filtro-fila" role="group" aria-label="Filtrar por estilo de producción">
-        <span class="filtro-nombre">Estilo</span>
-        <div class="chips" id="chipsEstilo"></div>
-      </div>
-    </div>
-    <p class="resultado" id="resultado" aria-live="polite"></p>
-    <div class="grupos" id="grupos"></div>
-  </div>
-</section>
-
-<!-- RESULTADOS -->
-<section class="resultados" id="resultados" aria-labelledby="tResultados">
-  <div class="contenedor">
-    <div class="seccion-cabeza">
-      <h2 id="tResultados" class="titulo-xl">Resultados</h2>
-      <p class="seccion-lead">Cifras reales de las cuentas y campañas que gestiono, medidas con Metricool y Meta. Cada número sale de un informe entregado al cliente.</p>
-    </div>
-
-    <dl class="megas">
-      <div><dt>+19 M</dt><dd>visualizaciones en los últimos 3 meses entre todos los perfiles que gestiono</dd></div>
-      <div><dt>11</dt><dd>perfiles activos de marcas, deportistas y eventos</dd></div>
-      <div><dt id="megaVideos">+105</dt><dd>videos publicados en este portafolio</dd></div>
-      <div><dt id="megaProyectos">+28</dt><dd>proyectos entre marcas, deportistas y eventos</dd></div>
+    <h2 id="tAccesos" class="sr">Explora el sitio</h2>
+    <dl class="megas megas-inicio">
+      <div><dt>+19 M</dt><dd>visualizaciones en los últimos 3 meses entre los perfiles que gestiono</dd></div>
+      <div><dt id="megaVideos">+118</dt><dd>videos publicados en el portafolio</dd></div>
+      <div><dt id="megaProyectos">+30</dt><dd>marcas, deportistas y eventos</dd></div>
+      <div><dt>11</dt><dd>perfiles activos medidos en Metricool</dd></div>
     </dl>
-
-    <figure class="res-perfiles">
-      <figcaption><b>Visualizaciones por perfil</b><span>10 de agosto al 9 de noviembre de 2026 · Instagram, Facebook y TikTok · orgánico y pauta</span></figcaption>
-      <ol class="barras" id="barrasPerfiles"></ol>
-      <details class="res-tabla"><summary>Ver como tabla</summary><table id="tablaPerfiles"><thead><tr><th>Perfil</th><th>Visualizaciones</th></tr></thead><tbody></tbody></table></details>
-    </figure>
-
-    <article class="res-caso">
-      <div class="res-texto">
-        <p class="res-rubro">Automovilismo · 5 fechas en 4 países</p>
-        <h3>GT Challenge de las Américas 2026</h3>
-        <p>Estrategia y comunicación del campeonato de Panamá a Guyana, Barbados y México: contenido en tiempo real en cada fin de semana de carrera, voz de los pilotos y colaboración con aliados.</p>
-        <dl class="res-datos">
-          <div><dt>2,25 M</dt><dd>personas alcanzadas</dd></div>
-          <div><dt>+15.977</dt><dd>seguidores nuevos</dd></div>
-          <div><dt>6,8%</dt><dd>engagement en Puebla</dd></div>
-          <div><dt>6,63 M</dt><dd>reproducciones de aliados</dd></div>
-        </dl>
-        <a class="link-linea" href="https://pro-motion-sport-marketing.github.io/gt-challenge-resultados/temporada/" target="_blank" rel="noopener">Ver el informe de la temporada</a>
-      </div>
-      <figure class="res-grafico">
-        <figcaption>Visualizaciones por fecha</figcaption>
-        <ol class="barras" id="barrasGT"></ol>
-        <details class="res-tabla"><summary>Ver como tabla</summary><table id="tablaGT"><thead><tr><th>Fecha</th><th>Visualizaciones</th></tr></thead><tbody></tbody></table></details>
-      </figure>
-    </article>
-
-    <div class="res-marcas">
-      <article>
-        <p class="res-rubro">Producto · ViCOMER</p>
-        <h3>Thor Kitchen</h3>
-        <dl>
-          <div><dt>11,76%</dt><dd>engagement récord en el reel con la Chef Laura Pazos</dd></div>
-          <div><dt>+1 M</dt><dd>impresiones y 40.487 clics en Meta Ads en septiembre</dd></div>
-          <div><dt>40.239</dt><dd>seguidores en Instagram; en septiembre lideró en engagement frente a Indurama y Teka</dd></div>
-        </dl>
-      </article>
-      <article>
-        <p class="res-rubro">Producto · ViCOMER</p>
-        <h3>iGlace</h3>
-        <dl>
-          <div><dt>9,90%</dt><dd>engagement en el reel de la IGBEER, la mejor pieza del trimestre</dd></div>
-          <div><dt>1.399</dt><dd>conversaciones desde Meta Ads a $0,11 cada una en octubre</dd></div>
-          <div><dt>37.759</dt><dd>reproducciones del reel IG500 en Facebook con pauta</dd></div>
-        </dl>
-      </article>
-      <article>
-        <p class="res-rubro">Producto · ViCOMER</p>
-        <h3>HiHeat</h3>
-        <dl>
-          <div><dt>5,63%</dt><dd>engagement promedio, el más alto de su historia</dd></div>
-          <div><dt>×3,2</dt><dd>conversaciones en Meta Ads: 1.098 en un mes</dd></div>
-          <div><dt>+381</dt><dd>seguidores en Instagram en septiembre</dd></div>
-        </dl>
-      </article>
-    </div>
-    <p class="res-fuente">Fuentes: Metricool (11 perfiles conectados), Meta Ads e informes mensuales de Pro Motion Sport Marketing, 2026.</p>
-  </div>
-</section>
-
-<!-- QUIÉN ESTÁ DETRÁS -->
-<section class="detras" id="detras" aria-labelledby="tDetras">
-  <div class="contenedor">
-    <div class="detras-cabeza">
-      <h2 id="tDetras" class="titulo-xl">Detrás de cámara</h2>
-      <div class="detras-texto">
-        <p class="detras-lead">Soy Daniel Espinoza, productor audiovisual y estratega de comunicación digital. De Marca viene de mi nombre.</p>
-        <p>Creo contenido móvil de alto impacto: mezclo la inmediatez del celular con las perspectivas de las cámaras de acción, la 360 y las tomas de dron para contar un mismo mensaje desde varios ángulos y dejar una impresión que se recuerde.</p>
-      </div>
-    </div>
-    <div class="roles">
-      <article>
-        <h3>Productor audiovisual</h3>
-        <p>Producción y edición instantánea con una metodología propia que entrega mientras el evento todavía está pasando, del deportivo al corporativo.</p>
-      </article>
-      <article>
-        <h3>Estratega de comunicación</h3>
-        <p>Licenciado en Marketing por la Universidad del Azuay. Ideación, creación y distribución de contenido con procesos sistematizados que leen patrones de rendimiento y deciden qué crear y qué recrear en cada periodo.</p>
-      </article>
-      <article>
-        <h3>Al frente de Pro Motion</h3>
-        <p>Pro Motion Sport Marketing es la primera agencia especializada en marca personal de deportistas profesionales. Desde ahí cubro competencias en vivo y construyo la narrativa de pilotos, riders y atletas.</p>
-      </article>
-    </div>
-    <dl class="hitos">
-      <div><dt>71 mil</dt><dd>reproducciones de “No puedes manejar moto”, la historia de superación de Luis Cross con Factory Bike</dd></div>
-      <div><dt>Le Mans</dt><dd>primera cobertura intercontinental: las 24 Horas en tiempo real con Motul</dd></div>
-      <div><dt>3 países</dt><dd>GT Challenge en Panamá, Barbados y Guyana con cámaras a bordo</dd></div>
-      <div><dt>28</dt><dd>proyectos entre marcas, deportistas y eventos de nueve rubros distintos</dd></div>
-    </dl>
-    <div class="collage">
-      <figure class="c-a"><img src="assets/fotos/rally360.jpg" alt="Cobertura 360 de un buggy en rally frente al público" loading="lazy"><figcaption>Cobertura 360 de rally</figcaption></figure>
-      <figure class="c-b"><img src="assets/fotos/abordo.jpg" alt="Daniel instalando una cámara dentro de un auto de carreras" loading="lazy"><figcaption>Cámaras a bordo</figcaption></figure>
-      <figure class="c-c"><img src="assets/fotos/lambo.jpg" alt="Daniel saliendo de un Lamborghini en boxes" loading="lazy"><figcaption>A bordo de un Lamborghini en Panamá</figcaption></figure>
-      <figure class="c-d"><img src="assets/fotos/guyana.jpg" alt="Daniel en la parrilla de salida del GT Challenge en Guyana" loading="lazy"><figcaption>Parrilla del GT Challenge en Guyana</figcaption></figure>
-      <figure class="c-e"><img src="assets/fotos/luis.jpg" alt="Entrevista en un granero con un motociclista" loading="lazy"><figcaption>Con Luis Cross, motociclista que compite con un solo brazo</figcaption></figure>
-      <figure class="c-f"><img src="assets/fotos/barbados.jpg" alt="Equipo organizador junto a los autos del GT Challenge en Barbados" loading="lazy"><figcaption>Equipo del GT Challenge en Barbados</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICIOS / PROCESO -->
-<section class="servicios" aria-labelledby="tServicios">
-  <div class="contenedor">
-    <div class="seccion-cabeza">
-      <h2 id="tServicios" class="titulo-xl">Cómo trabajo</h2>
-      <p class="seccion-lead">Rodaje instantáneo con iPhone, dron, cámara 360, estabilizador, micrófonos profesionales e iluminación propia. Un equipo liviano que llega a donde está la historia.</p>
-    </div>
-    <ol class="proceso">
-      <li><span class="paso">1</span><h3>Diagnóstico</h3><p>Entendemos tu marca: qué la hace única, a quién le habla y qué necesita lograr.</p></li>
-      <li><span class="paso">2</span><h3>Estrategia y guion</h3><p>Ideas clave, objetivo, mensaje y recursos por pieza. Si hace falta, un micro-embudo completo.</p></li>
-      <li><span class="paso">3</span><h3>Producción</h3><p>Storytelling y dirección en el rodaje. Tomas dinámicas, aéreas, testimoniales o de producto.</p></li>
-      <li><span class="paso">4</span><h3>Edición y audio</h3><p>Montaje, voz y sonido. Hasta dos rondas de cambios después de presentar cada video.</p></li>
-      <li><span class="paso">5</span><h3>Lectura</h3><p>Medimos qué movió cada video y reajustamos el siguiente mes con esa información.</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- PLANES + COTIZADOR -->
-<section class="planes" id="planes" aria-labelledby="tPlanes">
-  <p class="planes-fondo" aria-hidden="true">Planes</p>
-  <div class="contenedor">
-    <h2 id="tPlanes" class="sr">Planes y tipos de video</h2>
-    <div class="tarjetas-plan" id="tarjetasPlan"></div>
-
-    <div class="cotizador" id="cotizar">
-      <div class="cotizador-cabeza">
-        <h3>Arma tu cotización</h3>
-        <p>Elige cuántos videos de cada tipo necesitas. El total se calcula al instante y te llega lista por WhatsApp.</p>
-      </div>
-      <div class="cotizador-filas" id="cotizadorFilas"></div>
-      <div class="cotizador-total">
-        <div>
-          <p class="total-etiqueta">Total estimado</p>
-          <p class="total-valor" id="totalValor">$0</p>
-          <p class="total-nota" id="totalNota">Agrega al menos un video.</p>
-        </div>
-        <a class="btn btn-naranja" id="enviarCotizacion" href="#" target="_blank" rel="noopener" aria-disabled="true">Enviar por WhatsApp</a>
-      </div>
-      <ul class="condiciones">
-        <li>El servicio inicia con el 50% del valor total.</li>
-        <li>Hasta 2 cambios por video después de presentarlo.</li>
-        <li>Los viáticos fuera de la ciudad se cotizan aparte.</li>
-        <li>Valores referenciales por video. La propuesta final se ajusta a tu proyecto.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- CURSOS -->
-<section class="cursos" id="cursos" aria-labelledby="tCursos">
-  <div class="contenedor">
-    <div class="seccion-cabeza">
-      <h2 id="tCursos" class="titulo-xl">Cursos</h2>
-      <p class="seccion-lead">Lo que aplico con cada marca, ordenado para que lo hagas tú. Abrimos inscripciones pronto.</p>
-    </div>
-    <div class="lista-cursos">
-      <article class="curso">
-        <h3>Contenido instantáneo con el celular</h3>
-        <p>Grabar, iluminar, estabilizar y editar videos de calidad profesional con lo que llevas en el bolsillo.</p>
-        <a class="link-linea" data-curso="Contenido instantáneo con el celular" href="#">Avísame cuando abra</a>
-      </article>
-      <article class="curso">
-        <h3>Estrategias de comunicación escalables</h3>
-        <p>Pilares, formatos, calendario y micro-embudos para que tus redes crezcan con un sistema y no con suerte.</p>
-        <a class="link-linea" data-curso="Estrategias de comunicación escalables" href="#">Avísame cuando abra</a>
-      </article>
-      <article class="curso">
-        <h3>Inteligencia artificial para tu comunicación</h3>
-        <p>De la ideación al guion y a la producción: cómo integrar IA en cada paso sin perder tu voz.</p>
-        <a class="link-linea" data-curso="Inteligencia artificial para tu comunicación" href="#">Avísame cuando abra</a>
-      </article>
+    <div class="accesos-grid">
+      <a class="acceso acceso-xl" href="cobertura/">
+        <img src="assets/posters/seb-resumen.jpg" alt="" loading="lazy">
+        <span class="acceso-txt"><b>Cobertura en tiempo real</b><span>Mi especialidad: el evento contado mientras pasa, con casos de deporte, marcas y festivales.</span><em>Ver coberturas</em></span>
+      </a>
+      <a class="acceso" href="portafolio/">
+        <img src="assets/posters/andes-terraza.jpg" alt="" loading="lazy">
+        <span class="acceso-txt"><b>Portafolio</b><span>118 videos por marca, rubro y estilo.</span><em>Ver portafolio</em></span>
+      </a>
+      <a class="acceso" href="sobre-mi/">
+        <img src="assets/fotos/abordo.jpg" alt="" loading="lazy">
+        <span class="acceso-txt"><b>Sobre mí</b><span>Quién soy, cómo trabajo y mis equipos.</span><em>Conocerme</em></span>
+      </a>
+      <a class="acceso" href="resultados/">
+        <img src="assets/posters/gt-guyana.jpg" alt="" loading="lazy">
+        <span class="acceso-txt"><b>Resultados</b><span>Visualizaciones por perfil y casos medidos.</span><em>Ver resultados</em></span>
+      </a>
+      <a class="acceso" href="planes/">
+        <img src="assets/posters/thor-cocina.jpg" alt="" loading="lazy">
+        <span class="acceso-txt"><b>Planes y cotización</b><span>Videos desde $80 y coberturas desde $250.</span><em>Cotizar</em></span>
+      </a>
     </div>
   </div>
 </section>

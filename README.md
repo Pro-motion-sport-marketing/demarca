@@ -1,5 +1,10 @@
 # De Marca · Portafolio de Daniel Espinoza
 
+## Páginas
+Inicio, Cobertura, Portafolio, Resultados, Sobre mí, Planes y Cursos. Se generan con
+`python3 fuente/build.py` a partir de las piezas en `fuente/partes/` (menú y pie compartidos).
+Edita las piezas, no los index.html generados.
+
 Sitio estático (HTML, CSS y JS sin dependencias) publicado en GitHub Pages.
 
 ## Agregar un video al portafolio
