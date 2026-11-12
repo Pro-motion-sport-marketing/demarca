@@ -132,7 +132,7 @@ p { margin: 0; }
 .manifiesto-foto::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, var(--grafito) 0%, transparent 22%, transparent 45%, rgba(29,30,26,.92) 100%); }
 .manifiesto-foto figcaption { position: absolute; z-index: 1; left: 0; right: 0; bottom: clamp(28px, 5vw, 64px); margin: 0 auto; }
 .manifiesto-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(40px, 6vw, 96px); align-items: start; }
-.manifiesto-frase { font-size: clamp(24px, 3.4vw, 50px); font-weight: 800; line-height: 1.08; letter-spacing: -.02em; font-variation-settings: "wdth" 110; max-width: 19ch; text-wrap: balance; }
+.manifiesto-frase { font-size: clamp(24px, 3.4vw, 50px); font-weight: 800; line-height: 1.08; letter-spacing: -.02em; font-variation-settings: "wdth" 110; max-width: 30ch; text-wrap: balance; }
 .manifiesto-cita { margin: 0; }
 .manifiesto-frase { text-indent: -.42em; }
 .manifiesto-cita cite { display: block; margin-top: 16px; font-style: normal; font-weight: 700; font-size: 15px; color: var(--naranja); }
