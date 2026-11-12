@@ -663,6 +663,12 @@ p { margin: 0; }
 .art-cta-acciones { display: flex; flex-wrap: wrap; gap: 10px; }
 .art-cta .btn-linea { border-color: rgba(29,30,26,.35); color: var(--grafito); background: transparent; }
 .art-cta .btn-linea:hover { border-color: var(--grafito); }
+.art-voces { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 24px 0 28px; }
+.art-voz { margin: 0; padding: clamp(20px, 2.4vw, 28px); border-radius: 20px; background: var(--grafito-2); border: 1px solid rgba(240,241,234,.08); display: flex; flex-direction: column; gap: 12px; }
+.art-voz blockquote { margin: 0; font-size: clamp(19px, 1.7vw, 22px); line-height: 1.25; font-weight: 800; font-variation-settings: "wdth" 108; letter-spacing: -.01em; color: var(--hueso); text-wrap: balance; }
+.art-voz figcaption { font-size: 13px; color: var(--naranja); }
+.art-voz figcaption strong { font-weight: 700; }
+.art-cuerpo .art-voz p { margin: 0; font-size: 15px; line-height: 1.55; color: rgba(240,241,234,.75); }
 .art-fuentes-t { font-size: 20px !important; }
 .art-fuentes { margin: 0; padding-left: 22px; font-size: 14px; line-height: 1.55; color: var(--niebla); }
 .art-fuentes li + li { margin-top: 8px; }
@@ -674,6 +680,7 @@ p { margin: 0; }
   .blog-card { padding: 22px 20px; }
   .art-acciones { grid-template-columns: 1fr; }
   .art-cifras { grid-template-columns: 1fr 1fr; }
+  .art-voces { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
   .art-linea li { grid-template-columns: 1fr; gap: 4px; }
